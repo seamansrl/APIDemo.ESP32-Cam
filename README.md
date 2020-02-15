@@ -12,11 +12,11 @@ Dentro de las funciones de la API podemos encontrar:
 - ID DECODER
 - APLR (AUTOMATIC PLATE LICENSE RECOGNITION)
 
-al 01-02-2020 el proyecto estas en modo beta por lo cual para poder acceder y configurar la API se debera descargar la APP que permite a la administracion desde http://HORUS.CLIPSITE.COM.AR/Admin.zip
+al 01-02-2020 el proyecto estas en modo beta por lo cual para poder acceder y configurar la API se debera descargar la APP que permite a la administracion desde https://www.proyectohorus.com.ar/Admin.zip
 
-La URL a usar en el codigo de ejemplo es: http://horus.clipsite.com.ar/services
+La URL a usar en el codigo de ejemplo es: http://server1.proyectohorus.com.ar
 
-El usuario, Password y Perfil se obtienen en esta primer etapa desde el software descargable desde http://horus.clipsite.com.ar.
+El usuario, Password y Perfil se obtienen en esta primer etapa desde el software descargable desde https://www.proyectohorus.com.ar
 
 Ejemplo de como usar el administrador aca:
 
