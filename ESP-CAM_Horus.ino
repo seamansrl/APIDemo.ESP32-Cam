@@ -53,7 +53,7 @@ String GetToken(String user, String passwd, String profileuuid)
       
       HTTPClient http;
       
-      http.begin("http://horus.clipsite.com.ar/services/api/v2/functions/login"); 
+      http.begin("http://server1.proyectohorus.com.ar/api/v2/functions/login"); 
       http.addHeader("Content-Type", "application/x-www-form-urlencoded");
       int httpCode = http.POST("user=" + user + "&password=" + passwd + "&profileuuid=" + profileuuid);
       
@@ -146,7 +146,7 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
                               {
                                     HTTPClient http;
                                     
-                                    http.begin("http://horus.clipsite.com.ar/services/api/v2/admin/accounts/users/profiles/detections=" + UUIDDetection + "/value"); 
+                                    http.begin("http://server1.proyectohorus.com.ar/api/v2/admin/accounts/users/profiles/detections=" + UUIDDetection + "/value"); 
                                     http.addHeader("Authorization", APItoken); 
                                     http.addHeader("Content-Type", "text/html"); 
                                     
@@ -192,7 +192,7 @@ static esp_err_t take_send_photo()
       esp_http_client_handle_t http_client;
       esp_http_client_config_t config_client = {0};
       
-      config_client.url = "http://horus.clipsite.com.ar/services/api/v2/functions/face/id?responseformat=pipe";
+      config_client.url = "http://server1.proyectohorus.com.ar/api/v2/functions/face/id?responseformat=pipe";
       config_client.event_handler = _http_event_handler;
       config_client.method = HTTP_METHOD_POST;
       
