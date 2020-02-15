@@ -4,7 +4,22 @@ Código demo en C de ARDUINO para el consumo de la API de reconocimiento (Proyec
 
 El Proyecto Horus consiste en una API REST que permite de forma simple identificar imagenes via redes neuronales.
 
-Dentro de las funciones de la API podemos encontrar:
+# Cargar el codigo en la ESP32-CAM
+
+Para copiar el codigo a la ESP32-Cam se requiere de un adaptador USB-TTL el cual ira conectado de la siguiente manera:
+
+![Conexion entre TTL y ESP32-Cam](Conexionado.jpg)
+
+La configuración del entorno arduino para la carga sera:
+
+![Configuracion en entorno Arduino](Config_Arduino.png)
+
+El Proyecto Horus consiste en una API REST que permite de forma simple identificar imágenes vía redes neuronales.
+
+Nota: Si hay problemas para subir el codigo a la placa y todo parace corresponder correctamente debera probar invirtiendo el RX y el TX de la placa TTL.
+
+
+# Dentro de las funciones de la API podemos encontrar:
 
 - FACE ID
 - OBJECT DETECTION
